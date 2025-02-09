@@ -54,7 +54,56 @@ public class ProductChild {
                 total += product.price * product.quantity;
             }
             return total;
-
-	}
-
 }
+}
+//output:
+/*Enter 5 product Information from user and store
+Enter product id,product price,product quantity
+Enter details for product1:
+Product Id
+1
+Product Price
+10
+Product quantity
+3
+Enter details for product2:
+Product Id
+2
+Product Price
+20
+Product quantity
+3
+Enter details for product3:
+Product Id
+3
+Product Price
+30
+Product quantity
+2
+Enter details for product4:
+Product Id
+4
+Product Price
+20
+Product quantity
+3
+Enter details for product5:
+Product Id
+5
+Product Price
+34
+Product quantity
+5
+
+Product Details:
+Product ID: 1, Price: 10.0, Quantity: 3
+Product ID: 2, Price: 20.0, Quantity: 3
+Product ID: 3, Price: 30.0, Quantity: 2
+Product ID: 4, Price: 20.0, Quantity: 3
+Product ID: 5, Price: 34.0, Quantity: 5
+
+Product with the highest price:
+Product ID: 5, Price: 34.0
+
+Total amount spent on all products: 380.0
+*/
