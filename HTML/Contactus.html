@@ -1,0 +1,80 @@
+<!--to create contact form-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        form {
+            display: inline-block;
+            padding: 40px;
+            border: 2px solid #ccc;
+        }
+
+        h1 {
+            color: blueviolet;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            margin: 10px 0;
+            display: block; /* This is correct for input fields */
+        }
+
+        .checkbox-container {
+            text-align: left; /* Align checkbox and label left */
+            margin: 10px 0;
+        }
+
+        .checkbox-container input {
+            display: inline; /* Make checkbox inline */
+            width: auto; /* Reset width */
+            margin: 0; /* Remove margin */
+        }
+
+        .checkbox-container label {
+            display: inline; /* Make label inline */
+            margin-left: 5px; /* Add small gap between checkbox and label */
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 10px auto;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+<h1>Contact Us</h1>
+<form>
+    <input type="text" id="username" name="username" placeholder="Username" required />
+    <input type="email" id="email" name="email" placeholder="Email" required />
+
+    <div class="checkbox-container">
+        <input type="checkbox" id="check">
+        <label for="check">Remember Me</label>
+    </div>
+
+    <button type="submit">SUBMIT</button>
+</form>
+</body>
+</html>
