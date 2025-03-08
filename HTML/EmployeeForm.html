@@ -1,0 +1,68 @@
+
+<!--to create a list-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+    <style>
+        h1 {
+            color: blue; 
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid #555;
+            margin: auto;
+            width: 600px;
+            text-align: left;
+        }
+        label {
+            display: inline-block;
+            width: 150px; /* Equal spacing between label and input */
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 200px;
+            height: 30px;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+<h1>Employee/Business Login Form</h1>
+
+<form>
+    <label for="employee">Employee:</label>
+    <input type="text" id="employee" name="Employee"/><br/>
+
+    <label for="own_business">Own Business:</label>
+    <input type="text" id="own_business" name="own business"/><br/>
+
+    <label>Choose Job:</label>
+    <input type="radio" id="Employeeradio" value="Employee" name="job">
+    <label for="Employeeradio">Employee</label>
+
+    <input type="radio" id="businessradio" value="Own business" name="job">
+    <label for="businessradio">Own Business</label><br/>
+
+    <button type="submit">SUBMIT</button>
+</form>
+
+</body>
+</html>
