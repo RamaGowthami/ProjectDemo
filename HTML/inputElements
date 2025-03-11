@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <title>Input Elements Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            display: grid;
+            gap: 10px;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <h1>All Input Elements Demo</h1>
+    <form>
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text" placeholder="Enter text">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email">
+
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" placeholder="Enter number">
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time">
+
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" id="checkbox" name="checkbox"> I agree
+
+        <label for="radio">Radio:</label>
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female
+
+        <label for="file">File Upload:</label>
+        <input type="file" id="file" name="file">
+
+        <label for="color">Color Picker:</label>
+        <input type="color" id="color" name="color">
+
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range" min="0" max="100">
+
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url" placeholder="Enter URL">
+
+        <label for="tel">Phone:</label>
+        <input type="tel" id="tel" name="tel" placeholder="Enter phone number">
+
+        <label for="textarea">Textarea:</label>
+        <textarea id="textarea" name="textarea" rows="4" placeholder="Enter text"></textarea>
+
+        <label for="select">Dropdown:</label>
+        <select id="select" name="select">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!--Form elements with default values-->
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Form with default values.</title>
+    </head>
+    <body><h2>Form element with default values</h2>
+    <form>
+        <!--Text input-->
+        <label>Text:<input type="text" name="text" value="Default text"></label><br>
+        <!--Password input-->
+        <label>Password:<input type="password" name="password" value="enter minimum 8characters"></label><br>
+        <!--Email input-->
+        <label>Email:<input type="email" name="email" value="abc@gmail.com"></label>
+        <!--Number input-->
+        <label>Number:<input type="number" name="number" value="2345"></label>
+        <!--Date input-->
+        <label>Date:<input type="Date" name="date" value="01-08-21"></label>
+        <!--checkbox-->
+        <label>Subscribe:<input type="checkbox" name="subscribe" checked></label>
+        <!--Radio buttons-->
+        Gender:
+        <label><input type="radio" name="gender" value="male" checked></label>
+        <label><input type="radio" name="gender" value="female"></label>
+         <!-- Select Dropdown -->
+          <label>country:
+            <select name="country">
+                <option value="india" selected>India</option>
+                <option value="usa">USA</option>
+                <option value="U.A.E.">U.A.E</option>
+            </select>
+          </label><br>
+          <!--Text Area-->
+          <label>Comments:<br>
+            <textarea name="comments">Default comman Text...</textarea>
+        </label><br>
+         <!-- Range Input -->
+         <label>Range: <input type="range" name="volume" min="0" max="100" value="50"></label><br>
+        
+         <!-- Color Input -->
+         <label>Favorite Color: <input type="color" name="color" value="#ff0000"></label><br>
+         
+         <!-- Submit Button -->
+         <button type="submit">Submit</button>
+
+
+    </form>
+</body>
+</html>
