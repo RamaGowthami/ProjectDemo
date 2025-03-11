@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh; /* Full height */
+    background-color:gainsboro;
+    margin-bottom: 5%;
+}
+
+.flx-header {
+    background-color: rgb(100, 149, 237); /* Dull blue */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    height:1%;
+   
+    
+}
+
+.flx-main-container {
+    display: flex;
+    flex: 1; 
+    padding: 20px;
+    gap: 20px;
+   
+    
+    
+}
+
+.flx-nav {
+    width: 20%; 
+    padding: 10px; /* Reduced padding */
+    background: #24292f; 
+    color: white;  /* White text for readability */
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 75%; /* Adjust height */
+    min-height: 150px; /* Ensure it has a reasonable height */
+    margin-top:3%;
+    margin-left:9%;
+}
+
+.flx-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 50px;
+    margin-top:0.5%;
+}
+
+.flx-article-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid black;
+     
+}
+
+.search-bar {
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    background: #24292f; 
+    margin: 0 auto; /* Center horizontally */
+    margin-top:3%;
+}
+
+.card-container {
+    display: flex;      /* Flexbox instead of Grid */
+    flex-wrap: wrap;    /* Wrap items automatically */
+    gap: 120px; /* Reduced space between boxes */          /* Space between boxes */
+    justify-content: center;  /* Align to the left */
+    
+}
+
+.flx-article-section1 {
+    padding: 20px;
+    border: 2px solid grey;
+    background: #24292f;  
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;  /* Set a fixed width */
+    height: 100px; /* Smaller height to make it a rectangle */
+    box-sizing: border-box;
+    gap: 60px;
+    justify-content: flex-end;
+}
+.flx-article-section2{
+    padding: 20px;
+    border: 2px solid grey;
+    background: #24292f;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 85%; /* Reduce the width to make it smaller */
+    height: 150px;  /* Adjust the height */
+    margin-top: 20px;
+    box-sizing: border-box;
+    /* The key change: Align it below the three boxes, not on the sidebar */
+    margin-left: 9%; /* Position it below and adjacent to the sidebar */
+    margin-bottom: 10%;
+    
+    
+}
+.flx-footer {
+    background: #24292e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .flx-main-container {
+        flex-direction: column;
+    }
+
+    .flx-nav {
+        width: 100%;
+    }
+
+    .flx-content {
+        width: 100%;
+    }
+
+    .flx-article-section1 {
+        width: 100%; /* Full width in small screen */
+    }
+}
